@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.gap-24 {
+  gap: 24px;
+}
+
+.gap-32 {
+  gap: 32px;
+}
+
+@media (min-width: 768px) {
+  .md-column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .md-row {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  padding: 1.5rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 630px;
+  margin: 0 auto;
+}
+
+.image img:last-child {
+  display: none;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .image,
+  .card-body {
+    flex: 1;
+    width: 50%;
+  }
+
+  .image img:last-child {
+    display: block;
+  }
+
+  .image img:first-child {
+    display: none;
+  }
+}
+
+.sub-title {
+  font-size: 14px;
+  color: hsl(228, 12%, 48%);
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.2rem;
+}
+
+.title {
+  font-weight: 700;
+  font-family: "Fraunces", serif;
+  line-height: 1.9rem;
+  color: hsl(212, 21%, 14%);
+  font-size: 32px;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 1.5rem;
+  color: hsl(228, 12%, 48%);
+  font-family: "Montserrat", sans-serif;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.price span:first-child {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: hsl(158, 36%, 37%);
+}
+
+button {
+  height: 50px;
+  border-radius: 10px;
+  color: white;
+  background-color: hsl(158, 36%, 37%);
+  border: none;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
